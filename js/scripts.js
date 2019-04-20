@@ -41,10 +41,23 @@
 
     /* Selección de varios elementos o atributos */
 
-    var enlace = document.querySelectorAll('a');
-    for (var i = 0; i < enlace.length; i++) {
-      console.log(enlace[i].innerText); //Ingresar al Texto
-    }
+    // var enlace = document.querySelectorAll('a');
+    // for (var i = 0; i < enlace.length; i++) {
+    //   console.log(enlace[i].innerText); //Ingresar al Texto
+    // }
+
+    
+    /* Nodos */
+    var enlaces = document.querySelectorAll('#menu ul li a')[0];
+    console.log(enlaces.nodeType);
+    console.log(enlaces.nodeName);
+    console.log(enlaces.attributes);
+    console.log(enlaces.firstChild);
+    console.log(enlaces.firstChild.nodeValue);
+    
+    enlaces.firstChild.nodeValue = "Home";
+    enlaces.id = "mi_id";
+
 
 
 
