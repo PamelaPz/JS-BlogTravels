@@ -109,7 +109,21 @@
     }
     */
 
-    
+    /* Eliminar Nodos */
+    var primerPost = document.querySelector('main article');
+    console.log(primerPost);
+
+    primerPost.parentNode.removeChild(primerPost);
+
+    var enlaces = document.querySelectorAll('#navegacion nav ul li a')[10];
+    console.log(enlaces);
+    enlaces.parentNode.removeChild(enlaces);
+
+
+
+
+
+
 
 
 
