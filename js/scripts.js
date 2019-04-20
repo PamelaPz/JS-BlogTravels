@@ -61,7 +61,7 @@
     
     //Crear Contenido
 
-    var sidebar = document.querySelector('#sidebar');
+    /*var sidebar = document.querySelector('#sidebar');
     var nuevoElemento = document.createElement("H1");
     var nuevoTexto = document.createTextNode("Hola Mundo");
     nuevoElemento.appendChild(nuevoTexto);
@@ -80,6 +80,38 @@
     nuevaLista.appendChild(nuevoEnlace);
     //Agregar al menú
     enlacesSidebar[0].appendChild(nuevaLista);
+    */
+
+
+    /* CLonar Nodo */
+    /*var contenido = document.querySelectorAll('main');
+    var nuevoContenido = contenido[0].cloneNode(true);
+
+    var sidebar = document.querySelector('aside');
+
+    sidebar.insertBefore(nuevoContenido, sidebar.childNodes[5]);
+    */
+
+    /* Controlar Inserción */
+    /*var sidebar = document.querySelector('aside');
+    var masVisitados = document.createElement('H2');
+    var textoVisitados = document.createTextNode('Post más visitados');
+    masVisitados.appendChild(textoVisitados);
+    sidebar.insertBefore(masVisitados, sidebar.childNodes[0]);
+
+    var contenido =  document.querySelectorAll('main h2');
+
+    for(var i = 0; i < contenido.length; i++){
+      var nuevoElemento = document.createElement('LI');
+      var nuevoTexto = document.createTextNode(contenido[i].firstChild.nodeValue);
+      nuevoElemento.appendChild(nuevoTexto);
+      sidebar.insertBefore(nuevoElemento, sidebar.childNodes[1]);
+    }
+    */
+
+    
+
+
 
 
   });
