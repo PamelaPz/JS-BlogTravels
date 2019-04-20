@@ -33,15 +33,18 @@
     // }
 
     /* Selectores al estilo  CSS */
-    var logo = document.querySelector('#logo');
-    console.log(logo);
+    // var logo = document.querySelector('#logo');
+    // console.log(logo);
 
-    var encabezado = document.querySelectorAll('h2, footer p');
-    console.log(encabezado);
+    // var encabezado = document.querySelectorAll('h2, footer p');
+    // console.log(encabezado);
 
+    /* Selección de varios elementos o atributos */
 
-
-
+    var enlace = document.querySelectorAll('a');
+    for (var i = 0; i < enlace.length; i++) {
+      console.log(enlace[i].innerText); //Ingresar al Texto
+    }
 
 
 
