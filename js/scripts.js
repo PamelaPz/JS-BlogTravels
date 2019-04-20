@@ -18,19 +18,31 @@
 
 
     /* Selección de etiquetas */
-    var enlaces = document.getElementsByTagName('a');
-    console.log(enlaces);
+    // var enlaces = document.getElementsByTagName('a');
+    // console.log(enlaces);
 
-    for (var i = 0; i < enlaces.length; i++) {
-      enlaces[i].setAttribute('target', '_blank');
-    }
+    // for (var i = 0; i < enlaces.length; i++) {
+    //   enlaces[i].setAttribute('target', '_blank');
+    // }
 
-    var enlacesSidebar = document.getElementById('sidebar').getElementsByTagName('a');
-    console.log(enlacesSidebar);
+    // var enlacesSidebar = document.getElementById('sidebar').getElementsByTagName('a');
+    // console.log(enlacesSidebar);
 
-    for(var i = 0; i < enlacesSidebar.length; i++) {
-      enlacesSidebar[i].setAttribute('href', 'http://www.google.com');
-    }
+    // for(var i = 0; i < enlacesSidebar.length; i++) {
+    //   enlacesSidebar[i].setAttribute('href', 'http://www.google.com');
+    // }
+
+    /* Selectores al estilo  CSS */
+    var logo = document.querySelector('#logo');
+    console.log(logo);
+
+    var encabezado = document.querySelectorAll('h2, footer p');
+    console.log(encabezado);
+
+
+
+
+
 
 
   });
